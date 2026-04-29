@@ -1,8 +1,8 @@
 
 provider "aws" {
-  region = "us-east-1"
+  region = "ap-south-1"
 }
-/*
+
 resource "aws_instance" "terraform-ec2" {
 
   ami           = "ami-0e12ffc2dd465f6e4"
@@ -12,8 +12,8 @@ resource "aws_instance" "terraform-ec2" {
   }
 
 }
-*/
 
-resource "aws_iam_user" "name" {
+
+/*resource "aws_iam_user" "name" {
   name = "terraform-user"
-}
+}*/
