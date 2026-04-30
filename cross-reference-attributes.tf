@@ -1,4 +1,4 @@
-
+/*
 provider "aws" {
   region = "ap-south-1"
 }
@@ -19,3 +19,4 @@ resource "aws_vpc_security_group_ingress_rule" "terraform-sg-ipv4" {
   ip_protocol = "tcp"
   to_port     = 443
 }
+*/
