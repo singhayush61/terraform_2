@@ -1,7 +1,8 @@
+/*
 variable "my-map" {
   type = map
   default = {
-    featkey1 = "value1"
+    key1 = "value1"
     key2 = "value2"
     key3 = "value3"
   }
@@ -10,3 +11,4 @@ variable "my-map" {
 output "variable_value" {
   value = var.my-map
 }
+*/
