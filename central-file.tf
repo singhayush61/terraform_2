@@ -1,5 +1,5 @@
 
-
+/*
 provider "aws" {
   region = "ap-south-1"
 }
@@ -32,3 +32,4 @@ resource "aws_vpc_security_group_ingress_rule" "ftp_port" {
   ip_protocol       = "tcp"
   to_port           = var.ftp_port
 }
+*/
