@@ -1,3 +1,4 @@
+/*
 resource "aws_instance" "myec2" {
     ami = "ami-0e12ffc2dd465f6e4"
     instance_type = "t2.micro"
@@ -22,3 +23,4 @@ resource "aws_iam_user" "that" {
   name = var.users[count.index]
   count = 3
 }
+*/
