@@ -1,0 +1,4 @@
+resource "local_file" "foo" {
+  content  = "Hello from AYUSH!"
+  filename = "${path.module}/ayush.txt"
+}
