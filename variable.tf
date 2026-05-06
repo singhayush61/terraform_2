@@ -14,4 +14,4 @@ variable "ssh_port" {
 
 variable "ftp_port" {
     default = "21"
-}
+}*/
