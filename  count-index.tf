@@ -2,6 +2,7 @@ provider "aws" {
   region     = "us-west-2"
 }
 
+
 variable "iam_names" {
   type = list
   default = ["user-01","user-02","user-03"]
