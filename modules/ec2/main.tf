@@ -1,8 +1,14 @@
+
 provider "aws" {
-  region = "ap-south-1"
+  region = var.region
 }
 
 resource "aws_instance" "myec2" {
-    ami = "ami-00c39f71452c08778"
-    instance_type = "t2.micro"
+    ami = var.ami
+    instance_type = var.instance_type
 }
+
+
+variable "ami" {}
+variable "instance_type" {}
+variable "region" {}
