@@ -1,0 +1,8 @@
+provider "aws" {
+  region     = "ap-south-1"
+}
+
+import {
+  to = aws_security_group.mysg1
+  id = "sg-00fdd9336217e6fe1"
+}

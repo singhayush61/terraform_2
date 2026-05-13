@@ -1,0 +1,45 @@
+# __generated__ by Terraform
+# Please review these resources and move them into your main configuration files.
+
+# __generated__ by Terraform from "sg-00fdd9336217e6fe1"
+resource "aws_security_group" "mysg1" {
+  description = "Manual"
+  egress = [{
+    cidr_blocks      = ["0.0.0.0/0"]
+    description      = "Allow HTTP from Internet"
+    from_port        = 443
+    ipv6_cidr_blocks = []
+    prefix_list_ids  = []
+    protocol         = "tcp"
+    security_groups  = []
+    self             = false
+    to_port          = 443
+    }, {
+    cidr_blocks      = ["0.0.0.0/0"]
+    description      = "Allow HTTP from Internet"
+    from_port        = 80
+    ipv6_cidr_blocks = []
+    prefix_list_ids  = []
+    protocol         = "tcp"
+    security_groups  = []
+    self             = false
+    to_port          = 80
+    }, {
+    cidr_blocks      = ["172.31.0.0/16"]
+    description      = "Allow form Private Network"
+    from_port        = 21
+    ipv6_cidr_blocks = []
+    prefix_list_ids  = []
+    protocol         = "tcp"
+    security_groups  = []
+    self             = false
+    to_port          = 21
+  }]
+  ingress                = []
+  name                   = "manually-created-sg"
+  region                 = "ap-south-1"
+  revoke_rules_on_delete = null
+  tags                   = {}
+  tags_all               = {}
+  vpc_id                 = "vpc-0458ba08c15b06e69"
+}
